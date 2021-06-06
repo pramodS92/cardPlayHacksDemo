@@ -77,6 +77,8 @@ class UserGuideViewController: UIViewController {
     
     func  configureScrollView() {
         scrollView.contentSize = CGSize(width: view.frame.size.width * CGFloat(pageCount), height: scrollView.frame.size.height)
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         scrollView.isPagingEnabled = true
 
         for x in 0..<pageCount {
@@ -87,8 +89,6 @@ class UserGuideViewController: UIViewController {
             imageView.contentMode = .scaleAspectFill
             imageView.backgroundColor = .clear
             page.addSubview(imageView)
-            
-           
             
             self.view.bringSubview(toFront: imageView)
             scrollView.addSubview(page)
@@ -111,3 +111,4 @@ extension UserGuideViewController: UIScrollViewDelegate {
        
     }
 }
+

@@ -36,7 +36,7 @@ class FAQTableViewCell: UITableViewCell {
     @objc func checkAction(sender : UITapGestureRecognizer) {
         let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotationAnimation.fromValue = 0.0
-        rotationAnimation.toValue = M_PI
+        //rotationAnimation.toValue = M_PI
         rotationAnimation.duration = 1.0
 
         self.viewIcon.layer.add(rotationAnimation, forKey: nil)

@@ -69,13 +69,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C1B362A266B73F000933232 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		2C1B3641266BEA5900933232 /* FAQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,15 +161,14 @@
 		2CA5D010266016F700B9D45F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2C1B362A266B73F000933232 /* Constants */,
 				2C801183266A932300FF8542 /* Alert */,
 				2CDFE6CC2661DEC7003EEB57 /* Cell */,
 				2CA5CFFA2660160C00B9D45F /* WelcomeSplashViewController.swift */,
-				2C1B3637266B90BF00933232 /* UserGuideViewController.swift */,
 				2CA5D0122660199E00B9D45F /* HomeViewController.swift */,
 				2C28F28526636DFB004BDDB5 /* AppInstalationViewController.swift */,
 				2C7BD4712668B62500F8B067 /* JailBreakViewController.swift */,
 				2C7BD47A2669454E00F8B067 /* PaymentOptionsViewController.swift */,
+				2C1B3637266B90BF00933232 /* UserGuideViewController.swift */,
 				2C1B363E266BDC5400933232 /* FAQViewController.swift */,
 			);
 			path = "View Controllers";

@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FAQTableViewCell" rowHeight="155" id="KGk-i7-Jjw" customClass="FAQTableViewCell" customModule="CarPlay_Demo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qI-bA-Leb">
@@ -57,11 +57,11 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jw-5C-5wt">
-                        <rect key="frame" x="4" y="55" width="312" height="97"/>
+                        <rect key="frame" x="4" y="55" width="312" height="121"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="pppp" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-n2-nc8">
-                                <rect key="frame" x="8" y="8" width="296" height="81"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="pppp" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-n2-nc8">
+                                <rect key="frame" x="4" y="4" width="304" height="113"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -69,21 +69,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="t5a-n2-nc8" secondAttribute="bottom" constant="8" id="3vX-th-f22"/>
-                            <constraint firstItem="t5a-n2-nc8" firstAttribute="top" secondItem="3jw-5C-5wt" secondAttribute="top" constant="8" id="VUy-W1-yWt"/>
-                            <constraint firstAttribute="height" constant="97" id="bkG-rX-vQz"/>
-                            <constraint firstItem="t5a-n2-nc8" firstAttribute="leading" secondItem="3jw-5C-5wt" secondAttribute="leading" constant="8" id="ebu-qa-Eqk"/>
-                            <constraint firstAttribute="trailing" secondItem="t5a-n2-nc8" secondAttribute="trailing" constant="8" id="jAg-j0-1W9"/>
+                            <constraint firstAttribute="bottom" secondItem="t5a-n2-nc8" secondAttribute="bottom" constant="4" id="3vX-th-f22"/>
+                            <constraint firstAttribute="height" constant="121" id="Ja1-mk-ebH"/>
+                            <constraint firstItem="t5a-n2-nc8" firstAttribute="top" secondItem="3jw-5C-5wt" secondAttribute="top" constant="4" id="VUy-W1-yWt"/>
+                            <constraint firstItem="t5a-n2-nc8" firstAttribute="leading" secondItem="3jw-5C-5wt" secondAttribute="leading" constant="4" id="ebu-qa-Eqk"/>
+                            <constraint firstAttribute="trailing" secondItem="t5a-n2-nc8" secondAttribute="trailing" constant="4" id="jAg-j0-1W9"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3jw-5C-5wt" secondAttribute="bottom" constant="4" id="9P1-1v-j9I"/>
                     <constraint firstItem="3jw-5C-5wt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="En3-3r-69Y"/>
                     <constraint firstItem="3jw-5C-5wt" firstAttribute="top" secondItem="7qI-bA-Leb" secondAttribute="bottom" constant="1" id="VL1-c0-kCv"/>
                     <constraint firstItem="7qI-bA-Leb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="cLd-3E-l22"/>
                     <constraint firstAttribute="trailing" secondItem="7qI-bA-Leb" secondAttribute="trailing" constant="4" id="iWJ-xl-NnQ"/>
-                    <constraint firstAttribute="bottom" secondItem="3jw-5C-5wt" secondAttribute="bottom" constant="4" id="iZs-28-jTz"/>
                     <constraint firstAttribute="trailing" secondItem="3jw-5C-5wt" secondAttribute="trailing" constant="4" id="s0s-fD-Cjh"/>
                     <constraint firstItem="7qI-bA-Leb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="vHq-eB-mbw"/>
                 </constraints>
@@ -101,9 +101,6 @@
         <image name="chevron.right.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
