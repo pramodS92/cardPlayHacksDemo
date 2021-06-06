@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1B3638266B90BF00933232 /* UserGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B3637266B90BF00933232 /* UserGuideViewController.swift */; };
+		2C1B363F266BDC5400933232 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B363E266BDC5400933232 /* FAQViewController.swift */; };
+		2C1B3644266BEA7600933232 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B3642266BEA7600933232 /* FAQTableViewCell.swift */; };
+		2C1B3645266BEA7600933232 /* FAQTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B3643266BEA7600933232 /* FAQTableViewCell.xib */; };
+		2C28F28626636DFB004BDDB5 /* AppInstalationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C28F28526636DFB004BDDB5 /* AppInstalationViewController.swift */; };
+		2C7BD4722668B62500F8B067 /* JailBreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BD4712668B62500F8B067 /* JailBreakViewController.swift */; };
+		2C7BD4772668C4D700F8B067 /* JailBreakTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BD4752668C4D700F8B067 /* JailBreakTableViewCell.swift */; };
+		2C7BD4782668C4D700F8B067 /* JailBreakTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7BD4762668C4D700F8B067 /* JailBreakTableViewCell.xib */; };
+		2C7BD47B2669454E00F8B067 /* PaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BD47A2669454E00F8B067 /* PaymentOptionsViewController.swift */; };
+		2C7BD47F2669468000F8B067 /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BD47D2669468000F8B067 /* PaymentsTableViewCell.swift */; };
+		2C7BD4802669468000F8B067 /* PaymentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C7BD47E2669468000F8B067 /* PaymentsTableViewCell.xib */; };
+		2C801185266A934C00FF8542 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C801184266A934C00FF8542 /* AlertViewController.swift */; };
+		2CA5CFF72660160C00B9D45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5CFF62660160C00B9D45F /* AppDelegate.swift */; };
+		2CA5CFF92660160C00B9D45F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5CFF82660160C00B9D45F /* SceneDelegate.swift */; };
+		2CA5CFFB2660160C00B9D45F /* WelcomeSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5CFFA2660160C00B9D45F /* WelcomeSplashViewController.swift */; };
+		2CA5CFFE2660160C00B9D45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5CFFC2660160C00B9D45F /* Main.storyboard */; };
+		2CA5D0002660160D00B9D45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5CFFF2660160D00B9D45F /* Assets.xcassets */; };
+		2CA5D0132660199E00B9D45F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5D0122660199E00B9D45F /* HomeViewController.swift */; };
+		2CA5D01726601A8F00B9D45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA5D01626601A8F00B9D45F /* LaunchScreen.storyboard */; };
+		2CA5D090266023B900B9D45F /* UiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA5D08F266023B900B9D45F /* UiConstants.swift */; };
+		2CDFE6E226623F3F003EEB57 /* HomeCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFE6E026623F3F003EEB57 /* HomeCategoryTableViewCell.swift */; };
+		2CDFE6E326623F3F003EEB57 /* HomeCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDFE6E126623F3F003EEB57 /* HomeCategoryTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C1B3637266B90BF00933232 /* UserGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuideViewController.swift; sourceTree = "<group>"; };
+		2C1B363E266BDC5400933232 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		2C1B3642266BEA7600933232 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		2C1B3643266BEA7600933232 /* FAQTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQTableViewCell.xib; sourceTree = "<group>"; };
+		2C28F28526636DFB004BDDB5 /* AppInstalationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstalationViewController.swift; sourceTree = "<group>"; };
+		2C7BD4712668B62500F8B067 /* JailBreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailBreakViewController.swift; sourceTree = "<group>"; };
+		2C7BD4752668C4D700F8B067 /* JailBreakTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailBreakTableViewCell.swift; sourceTree = "<group>"; };
+		2C7BD4762668C4D700F8B067 /* JailBreakTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JailBreakTableViewCell.xib; sourceTree = "<group>"; };
+		2C7BD47A2669454E00F8B067 /* PaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsViewController.swift; sourceTree = "<group>"; };
+		2C7BD47D2669468000F8B067 /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
+		2C7BD47E2669468000F8B067 /* PaymentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsTableViewCell.xib; sourceTree = "<group>"; };
+		2C801184266A934C00FF8542 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		2CA5CFF32660160C00B9D45F /* CarPlay Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CarPlay Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA5CFF62660160C00B9D45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CA5CFF82660160C00B9D45F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2CA5CFFA2660160C00B9D45F /* WelcomeSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSplashViewController.swift; sourceTree = "<group>"; };
+		2CA5CFFD2660160C00B9D45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CA5CFFF2660160D00B9D45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CA5D0042660160D00B9D45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA5D0122660199E00B9D45F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2CA5D01626601A8F00B9D45F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CA5D08F266023B900B9D45F /* UiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiConstants.swift; sourceTree = "<group>"; };
+		2CDFE6E026623F3F003EEB57 /* HomeCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		2CDFE6E126623F3F003EEB57 /* HomeCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoryTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA5CFF02660160C00B9D45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C1B362A266B73F000933232 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2C1B3641266BEA5900933232 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B3642266BEA7600933232 /* FAQTableViewCell.swift */,
+				2C1B3643266BEA7600933232 /* FAQTableViewCell.xib */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		2C7BD4822669468900F8B067 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				2C7BD47D2669468000F8B067 /* PaymentsTableViewCell.swift */,
+				2C7BD47E2669468000F8B067 /* PaymentsTableViewCell.xib */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		2C801183266A932300FF8542 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				2C801184266A934C00FF8542 /* AlertViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		2CA5CFEA2660160C00B9D45F = {
+			isa = PBXGroup;
+			children = (
+				2CA5CFF52660160C00B9D45F /* CarPlay Demo */,
+				2CA5CFF42660160C00B9D45F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CA5CFF42660160C00B9D45F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5CFF32660160C00B9D45F /* CarPlay Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CA5CFF52660160C00B9D45F /* CarPlay Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5D08E266023A700B9D45F /* Constants */,
+				2CA5D00E266016D300B9D45F /* View */,
+				2CA5D00D2660166800B9D45F /* Resources */,
+				2CA5D00B2660165200B9D45F /* App */,
+				2CA5D0042660160D00B9D45F /* Info.plist */,
+			);
+			path = "CarPlay Demo";
+			sourceTree = "<group>";
+		};
+		2CA5D00B2660165200B9D45F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5CFF62660160C00B9D45F /* AppDelegate.swift */,
+				2CA5CFF82660160C00B9D45F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2CA5D00D2660166800B9D45F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5CFFF2660160D00B9D45F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CA5D00E266016D300B9D45F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5D010266016F700B9D45F /* View Controllers */,
+				2CA5D00F266016DA00B9D45F /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CA5D00F266016DA00B9D45F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5D01626601A8F00B9D45F /* LaunchScreen.storyboard */,
+				2CA5CFFC2660160C00B9D45F /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2CA5D010266016F700B9D45F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B362A266B73F000933232 /* Constants */,
+				2C801183266A932300FF8542 /* Alert */,
+				2CDFE6CC2661DEC7003EEB57 /* Cell */,
+				2CA5CFFA2660160C00B9D45F /* WelcomeSplashViewController.swift */,
+				2C1B3637266B90BF00933232 /* UserGuideViewController.swift */,
+				2CA5D0122660199E00B9D45F /* HomeViewController.swift */,
+				2C28F28526636DFB004BDDB5 /* AppInstalationViewController.swift */,
+				2C7BD4712668B62500F8B067 /* JailBreakViewController.swift */,
+				2C7BD47A2669454E00F8B067 /* PaymentOptionsViewController.swift */,
+				2C1B363E266BDC5400933232 /* FAQViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2CA5D08E266023A700B9D45F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2CA5D08F266023B900B9D45F /* UiConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2CA809492667FDFF006AE24B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2CDFE6E026623F3F003EEB57 /* HomeCategoryTableViewCell.swift */,
+				2CDFE6E126623F3F003EEB57 /* HomeCategoryTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2CA8094A2667FE12006AE24B /* JailBreakTools */ = {
+			isa = PBXGroup;
+			children = (
+				2C7BD4752668C4D700F8B067 /* JailBreakTableViewCell.swift */,
+				2C7BD4762668C4D700F8B067 /* JailBreakTableViewCell.xib */,
+			);
+			path = JailBreakTools;
+			sourceTree = "<group>";
+		};
+		2CDFE6CC2661DEC7003EEB57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B3641266BEA5900933232 /* FAQ */,
+				2C7BD4822669468900F8B067 /* Payments */,
+				2CA8094A2667FE12006AE24B /* JailBreakTools */,
+				2CA809492667FDFF006AE24B /* Home */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CA5CFF22660160C00B9D45F /* CarPlay Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CA5D0072660160D00B9D45F /* Build configuration list for PBXNativeTarget "CarPlay Demo" */;
+			buildPhases = (
+				2CA5CFEF2660160C00B9D45F /* Sources */,
+				2CA5CFF02660160C00B9D45F /* Frameworks */,
+				2CA5CFF12660160C00B9D45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CarPlay Demo";
+			productName = "CarPlay Demo";
+			productReference = 2CA5CFF32660160C00B9D45F /* CarPlay Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CA5CFEB2660160C00B9D45F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2CA5CFF22660160C00B9D45F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2CA5CFEE2660160C00B9D45F /* Build configuration list for PBXProject "CarPlay Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CA5CFEA2660160C00B9D45F;
+			productRefGroup = 2CA5CFF42660160C00B9D45F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CA5CFF22660160C00B9D45F /* CarPlay Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CA5CFF12660160C00B9D45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDFE6E326623F3F003EEB57 /* HomeCategoryTableViewCell.xib in Resources */,
+				2C7BD4782668C4D700F8B067 /* JailBreakTableViewCell.xib in Resources */,
+				2C7BD4802669468000F8B067 /* PaymentsTableViewCell.xib in Resources */,
+				2CA5D01726601A8F00B9D45F /* LaunchScreen.storyboard in Resources */,
+				2C1B3645266BEA7600933232 /* FAQTableViewCell.xib in Resources */,
+				2CA5D0002660160D00B9D45F /* Assets.xcassets in Resources */,
+				2CA5CFFE2660160C00B9D45F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA5CFEF2660160C00B9D45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA5CFFB2660160C00B9D45F /* WelcomeSplashViewController.swift in Sources */,
+				2CA5D090266023B900B9D45F /* UiConstants.swift in Sources */,
+				2CDFE6E226623F3F003EEB57 /* HomeCategoryTableViewCell.swift in Sources */,
+				2C7BD4772668C4D700F8B067 /* JailBreakTableViewCell.swift in Sources */,
+				2C7BD4722668B62500F8B067 /* JailBreakViewController.swift in Sources */,
+				2C28F28626636DFB004BDDB5 /* AppInstalationViewController.swift in Sources */,
+				2C7BD47F2669468000F8B067 /* PaymentsTableViewCell.swift in Sources */,
+				2C801185266A934C00FF8542 /* AlertViewController.swift in Sources */,
+				2C1B3644266BEA7600933232 /* FAQTableViewCell.swift in Sources */,
+				2C1B3638266B90BF00933232 /* UserGuideViewController.swift in Sources */,
+				2C7BD47B2669454E00F8B067 /* PaymentOptionsViewController.swift in Sources */,
+				2CA5CFF72660160C00B9D45F /* AppDelegate.swift in Sources */,
+				2C1B363F266BDC5400933232 /* FAQViewController.swift in Sources */,
+				2CA5CFF92660160C00B9D45F /* SceneDelegate.swift in Sources */,
+				2CA5D0132660199E00B9D45F /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CA5CFFC2660160C00B9D45F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA5CFFD2660160C00B9D45F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CA5D0052660160D00B9D45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CA5D0062660160D00B9D45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CA5D0082660160D00B9D45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "CarPlay Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dekotan.CarPlay-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CA5D0092660160D00B9D45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "CarPlay Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dekotan.CarPlay-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CA5CFEE2660160C00B9D45F /* Build configuration list for PBXProject "CarPlay Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA5D0052660160D00B9D45F /* Debug */,
+				2CA5D0062660160D00B9D45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CA5D0072660160D00B9D45F /* Build configuration list for PBXNativeTarget "CarPlay Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CA5D0082660160D00B9D45F /* Debug */,
+				2CA5D0092660160D00B9D45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CA5CFEB2660160C00B9D45F /* Project object */;
+}

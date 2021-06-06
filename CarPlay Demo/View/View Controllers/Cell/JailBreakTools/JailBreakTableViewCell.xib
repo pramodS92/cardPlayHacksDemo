@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JailBreakTableViewCell" id="KGk-i7-Jjw" customClass="JailBreakTableViewCell" customModule="CarPlay_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkra1n" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-By-KJh">
+                        <rect key="frame" x="5" y="10" width="88" height="67"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="Huk-v3-Dvd"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkra1n" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlY-I3-j5n">
+                        <rect key="frame" x="98" y="8" width="152" height="21.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-bc-DZe">
+                        <rect key="frame" x="258" y="8" width="56" height="41"/>
+                        <color key="backgroundColor" red="0.77523241180000002" green="1" blue="0.57336098790000001" alpha="0.41877140410000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="qQl-Qh-bBb"/>
+                            <constraint firstAttribute="height" constant="41" id="vFo-gw-cxu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Install">
+                            <color key="titleColor" systemColor="systemGreenColor"/>
+                        </state>
+                        <connections>
+                            <action selector="actionInstall:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NgC-nu-HsT"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoolStar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-BJ-wpX">
+                        <rect key="frame" x="98" y="34.5" width="152" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freemium App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYA-wX-OcJ">
+                        <rect key="frame" x="252.5" y="54" width="67" height="10"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="IZq-ra-l81"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nnf-bc-DZe" firstAttribute="leading" secondItem="BlY-I3-j5n" secondAttribute="trailing" constant="8" symbolic="YES" id="49h-1o-q14"/>
+                    <constraint firstItem="BlY-I3-j5n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="4ts-Y5-bD8"/>
+                    <constraint firstAttribute="trailing" secondItem="nnf-bc-DZe" secondAttribute="trailing" constant="6" id="Qqd-wS-tcD"/>
+                    <constraint firstItem="nnf-bc-DZe" firstAttribute="leading" secondItem="fKP-BJ-wpX" secondAttribute="trailing" constant="8" symbolic="YES" id="Sfw-2c-ddg"/>
+                    <constraint firstItem="fKP-BJ-wpX" firstAttribute="top" secondItem="BlY-I3-j5n" secondAttribute="bottom" constant="5" id="Vaf-Km-2DT"/>
+                    <constraint firstItem="nnf-bc-DZe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="b0E-jE-fEG"/>
+                    <constraint firstItem="y4d-By-KJh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ecn-1z-2SB"/>
+                    <constraint firstItem="aYA-wX-OcJ" firstAttribute="top" secondItem="nnf-bc-DZe" secondAttribute="bottom" constant="5" id="frP-cm-JQk"/>
+                    <constraint firstItem="aYA-wX-OcJ" firstAttribute="centerX" secondItem="nnf-bc-DZe" secondAttribute="centerX" id="loC-4J-knF"/>
+                    <constraint firstItem="y4d-By-KJh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="orB-Gn-A3a"/>
+                    <constraint firstItem="fKP-BJ-wpX" firstAttribute="leading" secondItem="y4d-By-KJh" secondAttribute="trailing" constant="5" id="x3d-ex-voJ"/>
+                    <constraint firstAttribute="bottom" secondItem="y4d-By-KJh" secondAttribute="bottom" constant="8" id="yNf-e0-sM8"/>
+                    <constraint firstItem="BlY-I3-j5n" firstAttribute="leading" secondItem="y4d-By-KJh" secondAttribute="trailing" constant="5" id="ze8-dA-yV0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="jailBreakAppDescription" destination="fKP-BJ-wpX" id="oKG-Y2-RXH"/>
+                <outlet property="jailBreakAppIcon" destination="y4d-By-KJh" id="C7n-0S-f8a"/>
+                <outlet property="jailBreakAppInstallButton" destination="nnf-bc-DZe" id="lYF-sn-Oag"/>
+                <outlet property="jailBreakAppName" destination="BlY-I3-j5n" id="SBX-y9-wfK"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="115.51339285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkra1n" width="88" height="80"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
