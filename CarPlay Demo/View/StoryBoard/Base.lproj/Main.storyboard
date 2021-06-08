@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeSplashViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -31,18 +31,18 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uCl-Jr-VFL" customClass="HomeViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JlE-vU-267">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-Uv-tvd">
-                                <rect key="frame" x="354" y="59" width="45" height="45"/>
+                                <rect key="frame" x="354" y="15" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="5ce-WX-MVZ"/>
                                     <constraint firstAttribute="width" constant="45" id="B4Z-fR-TYl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Install apps Carplay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-08-tCb">
-                                <rect key="frame" x="12" y="112" width="390" height="35"/>
+                                <rect key="frame" x="12" y="68" width="390" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Itw-9Z-6jR"/>
                                 </constraints>
@@ -51,18 +51,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qh9-SM-GQy">
-                                <rect key="frame" x="35" y="167" width="345" height="45"/>
+                                <rect key="frame" x="30" y="118" width="354" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mzW-ge-1Wf">
-                                        <rect key="frame" x="12" y="0.0" width="291" height="45"/>
+                                        <rect key="frame" x="12" y="0.0" width="282" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="go3-LQ-1zr">
-                                        <rect key="frame" x="311" y="9" width="22" height="28"/>
+                                        <rect key="frame" x="308" y="9" width="19" height="40"/>
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="22" id="uDD-WA-efq"/>
+                                            <constraint firstAttribute="width" constant="19" id="uDD-WA-efq"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -72,14 +72,14 @@
                                     <constraint firstItem="mzW-ge-1Wf" firstAttribute="leading" secondItem="Qh9-SM-GQy" secondAttribute="leading" constant="12" id="MiA-HB-heH"/>
                                     <constraint firstItem="mzW-ge-1Wf" firstAttribute="top" secondItem="Qh9-SM-GQy" secondAttribute="top" id="bJe-sR-b2p"/>
                                     <constraint firstItem="go3-LQ-1zr" firstAttribute="top" secondItem="Qh9-SM-GQy" secondAttribute="top" constant="9" id="gDl-zN-dSY"/>
-                                    <constraint firstAttribute="height" constant="45" id="l9d-Sy-BBE"/>
-                                    <constraint firstAttribute="bottom" secondItem="go3-LQ-1zr" secondAttribute="bottom" constant="8" id="oCS-Pz-BcB"/>
-                                    <constraint firstItem="go3-LQ-1zr" firstAttribute="leading" secondItem="mzW-ge-1Wf" secondAttribute="trailing" constant="8" id="t0W-QA-AkP"/>
-                                    <constraint firstAttribute="trailing" secondItem="go3-LQ-1zr" secondAttribute="trailing" constant="12" id="tYZ-GE-gTJ"/>
+                                    <constraint firstAttribute="height" constant="60" id="l9d-Sy-BBE"/>
+                                    <constraint firstAttribute="bottom" secondItem="go3-LQ-1zr" secondAttribute="bottom" constant="11" id="oCS-Pz-BcB"/>
+                                    <constraint firstItem="go3-LQ-1zr" firstAttribute="leading" secondItem="mzW-ge-1Wf" secondAttribute="trailing" constant="14" id="t0W-QA-AkP"/>
+                                    <constraint firstAttribute="trailing" secondItem="go3-LQ-1zr" secondAttribute="trailing" constant="27" id="tYZ-GE-gTJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zc1-hN-4s7">
-                                <rect key="frame" x="17" y="230" width="380" height="190"/>
+                                <rect key="frame" x="17" y="188" width="380" height="190"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Oqe-ko-65u">
                                         <rect key="frame" x="0.0" y="0.0" width="380" height="190"/>
@@ -401,21 +401,21 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PX-3B-56i">
-                                <rect key="frame" x="16" y="466" width="382" height="376"/>
+                                <rect key="frame" x="16" y="430" width="382" height="286"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-ce-8GS">
-                                <rect key="frame" x="18" y="428" width="380" height="30"/>
+                                <rect key="frame" x="18" y="392" width="380" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Apps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRj-mQ-087">
-                                        <rect key="frame" x="8" y="5" width="70" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <rect key="frame" x="8" y="5" width="77.666666666666671" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View All" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23e-xU-GLl">
-                                        <rect key="frame" x="313" y="5" width="59" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <rect key="frame" x="325.66666666666669" y="5" width="46.333333333333314" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                         <color key="textColor" red="0.059212408959999997" green="0.35817873480000001" blue="0.7137628198" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -435,18 +435,18 @@
                         <viewLayoutGuide key="safeArea" id="VRe-M1-hKI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cBY-ce-8GS" firstAttribute="top" secondItem="Zc1-hN-4s7" secondAttribute="bottom" constant="8" id="2m0-Wd-hYU"/>
+                            <constraint firstItem="cBY-ce-8GS" firstAttribute="top" secondItem="Zc1-hN-4s7" secondAttribute="bottom" constant="14" id="2m0-Wd-hYU"/>
                             <constraint firstItem="cBY-ce-8GS" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="18" id="81h-eu-bTV"/>
-                            <constraint firstItem="Qh9-SM-GQy" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="35" id="9Uc-Bg-4FK"/>
+                            <constraint firstItem="Qh9-SM-GQy" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="30" id="9Uc-Bg-4FK"/>
                             <constraint firstItem="0PX-3B-56i" firstAttribute="top" secondItem="cBY-ce-8GS" secondAttribute="bottom" constant="8" symbolic="YES" id="CGl-qw-BaG"/>
                             <constraint firstItem="DHa-08-tCb" firstAttribute="top" secondItem="xKQ-Uv-tvd" secondAttribute="bottom" constant="8" id="Hjs-1B-pdv"/>
                             <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="Zc1-hN-4s7" secondAttribute="trailing" constant="17" id="NGo-KV-k8A"/>
                             <constraint firstItem="0PX-3B-56i" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="16" id="QB7-0h-ABC"/>
                             <constraint firstItem="Zc1-hN-4s7" firstAttribute="centerX" secondItem="JlE-vU-267" secondAttribute="centerX" id="UhQ-0O-L2e"/>
                             <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="xKQ-Uv-tvd" secondAttribute="trailing" constant="15" id="WO3-G8-Bzp"/>
-                            <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="Qh9-SM-GQy" secondAttribute="trailing" constant="34" id="YQQ-eT-AUV"/>
-                            <constraint firstItem="Qh9-SM-GQy" firstAttribute="top" secondItem="DHa-08-tCb" secondAttribute="bottom" constant="20" id="acU-tC-sCD"/>
-                            <constraint firstItem="Zc1-hN-4s7" firstAttribute="top" secondItem="Qh9-SM-GQy" secondAttribute="bottom" constant="18" id="gA4-rC-49g"/>
+                            <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="Qh9-SM-GQy" secondAttribute="trailing" constant="30" id="YQQ-eT-AUV"/>
+                            <constraint firstItem="Qh9-SM-GQy" firstAttribute="top" secondItem="DHa-08-tCb" secondAttribute="bottom" constant="15" id="acU-tC-sCD"/>
+                            <constraint firstItem="Zc1-hN-4s7" firstAttribute="top" secondItem="Qh9-SM-GQy" secondAttribute="bottom" constant="10" id="gA4-rC-49g"/>
                             <constraint firstItem="Zc1-hN-4s7" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="17" id="hlx-zE-bW3"/>
                             <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="cBY-ce-8GS" secondAttribute="trailing" constant="16" id="igD-j5-kpy"/>
                             <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="0PX-3B-56i" secondAttribute="trailing" constant="16" id="j8w-al-Ihc"/>
@@ -490,7 +490,7 @@
             <objects>
                 <viewController storyboardIdentifier="AppInstalationViewController" id="71t-Xf-EJz" customClass="AppInstalationViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npa-V1-CJz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dk0-zb-ZIk">
@@ -666,7 +666,7 @@
                                     <constraint firstAttribute="height" constant="74" id="BrZ-CI-cRm"/>
                                 </constraints>
                                 <color key="textColor" systemColor="systemGray3Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28P-yo-rKe">
@@ -747,7 +747,7 @@
             <objects>
                 <viewController storyboardIdentifier="JailBreakViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JAb-JS-rNb" customClass="JailBreakViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqN-8I-v2J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejI-eu-axf">
@@ -837,7 +837,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-4M-1nl">
-                                <rect key="frame" x="10" y="296.66666666666669" width="394" height="545.33333333333326"/>
+                                <rect key="frame" x="10" y="296.66666666666674" width="394" height="419.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -873,7 +873,7 @@
             <objects>
                 <viewController storyboardIdentifier="PaymentOptionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jej-Fq-yNm" customClass="PaymentOptionsViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mP2-k3-ExC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLq-CK-o6a">
@@ -965,7 +965,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuG-WV-XH6">
-                                <rect key="frame" x="20" y="296.33333333333331" width="374" height="545.66666666666674"/>
+                                <rect key="frame" x="20" y="296.33333333333326" width="374" height="419.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -1002,11 +1002,11 @@
             <objects>
                 <viewController storyboardIdentifier="AlertViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hhd-W4-3sS" customClass="AlertViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l8N-oX-G6Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0M-ke-Her">
-                                <rect key="frame" x="20.666666666666657" y="300.66666666666669" width="373" height="295.00000000000006"/>
+                                <rect key="frame" x="20.666666666666657" y="220.66666666666663" width="373" height="295"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="Jnd-x0-X2u">
                                         <rect key="frame" x="146.33333333333334" y="30" width="80" height="80"/>
@@ -1016,14 +1016,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your payment has been completed succesfully." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZU-3e-Gb1">
-                                        <rect key="frame" x="0.0" y="138" width="373" height="17"/>
+                                        <rect key="frame" x="0.0" y="138.00000000000003" width="373" height="17"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.4141418147" green="0.4141418147" blue="0.4141418147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCh-MS-lpM">
-                                        <rect key="frame" x="0.0" y="234.99999999999994" width="373" height="60"/>
+                                        <rect key="frame" x="0.0" y="235" width="373" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF0-o0-aDt">
                                                 <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
@@ -1086,7 +1086,7 @@
             <objects>
                 <viewController storyboardIdentifier="UserGuideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4LI-ss-m6n" customClass="UserGuideViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qsk-v2-MY4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttJ-I7-zYT">
@@ -1206,7 +1206,7 @@
             <objects>
                 <viewController storyboardIdentifier="FAQViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Frt-bz-mSW" customClass="FAQViewController" customModule="CarPlay_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="072-6C-LsN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-xF-vjB">
@@ -1281,7 +1281,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Okf-Y7-KfU">
-                                <rect key="frame" x="0.0" y="168" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="168" width="414" height="588"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>

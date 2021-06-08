@@ -90,7 +90,7 @@ class UserGuideViewController: UIViewController {
             imageView.backgroundColor = .clear
             page.addSubview(imageView)
             
-            self.view.bringSubview(toFront: imageView)
+            self.view.bringSubviewToFront(imageView)
             scrollView.addSubview(page)
         }
     }

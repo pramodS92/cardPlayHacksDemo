@@ -34,7 +34,7 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
         tableView.dataSource = self
         
         tableView.estimatedRowHeight = 180
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         
     }
     
@@ -51,7 +51,7 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        return questionFAQ.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -80,5 +80,7 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     }
     
 }
+
+
 
 

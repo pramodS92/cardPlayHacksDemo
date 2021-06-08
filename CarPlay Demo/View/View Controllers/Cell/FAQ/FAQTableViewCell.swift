@@ -11,11 +11,11 @@ import UIKit
 
 class FAQTableViewCell: UITableViewCell {
     static let identifier = "FAQTableViewCell"
-    
 
     @IBOutlet weak var viewIcon: UIView!
     @IBOutlet weak var titleFAQ: UILabel!
     @IBOutlet weak var textFieldFAQ: UITextView!
+    @IBOutlet weak var titleViewHolder: UIView!
     
     var isExpand: Bool = false
     
@@ -34,12 +34,7 @@ class FAQTableViewCell: UITableViewCell {
     }
     
     @objc func checkAction(sender : UITapGestureRecognizer) {
-        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
-        rotationAnimation.fromValue = 0.0
-        //rotationAnimation.toValue = M_PI
-        rotationAnimation.duration = 1.0
 
-        self.viewIcon.layer.add(rotationAnimation, forKey: nil)
     }
     
     func setviewVisibility(isExpand: Bool){
@@ -58,3 +53,5 @@ extension UIView{
         self.layer.add(rotation, forKey: "rotationAnimation")
     }
 }
+
+

@@ -8,6 +8,7 @@
 
 
 import UIKit
+import Foundation
 
 
 enum Category: Int {
@@ -33,23 +34,46 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     @IBOutlet var homeMenuTitles: [UILabel]!
     
     let homeMenuList = ["Entertainment","Utilities","Health","Social","Medicines","Finance","Skin","Surgeon"]
-    let appNames = ["YouTube","FaceBook","Netflix","YouTube","FaceBook","Netflix","YouTube","FaceBook","Netflix"]
-    
-    let appIcons = [UIImage(named: "Youtube"),
-                    UIImage(named: "Facebook"),
-                    UIImage(named: "Netflix"),
-                    UIImage(named: "Youtube"),
-                    UIImage(named: "Facebook"),
-                    UIImage(named: "Netflix"),
-                    UIImage(named: "Youtube"),
-                    UIImage(named: "Facebook"),
-                    UIImage(named: "Netflix")]
+    var tableData: [AppDetails] = []
+    var sortTableData: [AppDetails] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configData()
         self.setUpUiProps()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillAppear(notification:)),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillDisappear(notification:)),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+
+    }
+
+    
+    
+    func configData(){
+        tableData.append(AppDetails(appName: "YouTube", appDescription: "aaaa", appImage: UIImage(named: "Youtube")!))
+        tableData.append(AppDetails(appName: "FaceBook", appDescription: "bbbb", appImage: UIImage(named: "Facebook")!))
+        tableData.append(AppDetails(appName: "Netflix", appDescription: "cccc", appImage: UIImage(named: "Netflix")!))
+        tableData.append(AppDetails(appName: "YouTube", appDescription: "ddddd", appImage: UIImage(named: "Youtube")!))
+        tableData.append(AppDetails(appName: "FaceBook", appDescription: "eeeee", appImage: UIImage(named: "Facebook")!))
+        tableData.append(AppDetails(appName: "Netflix", appDescription: "fffffff", appImage: UIImage(named: "Netflix")!))
+        
+        sortTableData = tableData
+    }
+    
+    
     
     
     func setUpUiProps() {
@@ -69,6 +93,18 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         let tap = UITapGestureRecognizer(target: self, action: #selector(navigateToFAQ))
         profileImage.addGestureRecognizer(tap)
         profileImage.isUserInteractionEnabled = true
+        
+        self.homeSearchTextInput.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+   
+    
+    @objc func keyboardWillAppear(notification: NSNotification) {
+        self.view.frame.origin.y = -70
+    }
+
+    @objc func keyboardWillDisappear(notification: NSNotification) {
+        self.view.frame.origin.y = 0
     }
     
     
@@ -78,9 +114,24 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         }
     }
     
+    @objc func textFieldDidChange(_ sender: UITextField) {
+        if (sender.text == "") {
+            sortTableData = tableData
+        }else{
+            sortTableData.removeAll()
+            for object in tableData{
+                if object.appName.lowercased().contains((sender.text?.lowercased())!){
+                    sortTableData.append(object)
+                }
+            }
+        }
+        
+        appListTableView.reloadData()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return appNames.count
+        return sortTableData.count
     }
     
     
@@ -88,10 +139,10 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         let cell = appListTableView.dequeueReusableCell(withIdentifier: HomeCategoryTableViewCell.identifier, for: indexPath) as! HomeCategoryTableViewCell
         cell.selectionStyle = .none
         cell.cetegoryAddButton.tag = indexPath.row
-        cell.categoryItemAppName.text = self.appNames[indexPath.row]
-        cell.categoryItemAppIcon.image = self.appIcons[indexPath.row]
+        cell.categoryItemAppName.text = self.sortTableData[indexPath.row].appName
+        cell.categoryItemAppIcon.image = self.sortTableData[indexPath.row].appImage
         cell.actionCellClick = {
-            self.navigateToAppInstaller(appName: self.appNames[indexPath.row])
+            self.navigateToAppInstaller(appName:  self.sortTableData[indexPath.row].appName)
         }
         return cell
     }
@@ -156,6 +207,12 @@ extension HomeViewController {
     }
 }
 
+
+struct AppDetails {
+    var appName: String
+    var appDescription: String
+    var appImage: UIImage
+}
 
 
 

@@ -62,6 +62,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="pppp" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-n2-nc8">
                                 <rect key="frame" x="4" y="4" width="304" height="113"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="cGV-CR-cxS"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -92,6 +95,7 @@
             <connections>
                 <outlet property="textFieldFAQ" destination="t5a-n2-nc8" id="UZy-ii-BPw"/>
                 <outlet property="titleFAQ" destination="dMl-8B-JK2" id="ubW-xv-SMc"/>
+                <outlet property="titleViewHolder" destination="7qI-bA-Leb" id="JAS-7B-XeF"/>
                 <outlet property="viewIcon" destination="iPU-Db-7rA" id="B65-8d-Fjs"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="127.23214285714285"/>
