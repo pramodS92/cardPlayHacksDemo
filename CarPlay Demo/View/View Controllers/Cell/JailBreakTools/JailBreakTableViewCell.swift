@@ -21,6 +21,7 @@ class JailBreakTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.jailBreakAppInstallButton.layer.cornerRadius = 3
 
     }
 

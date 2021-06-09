@@ -12,8 +12,11 @@ import UIKit
 class JailBreakViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var jailBreakInstructionTextFeild: UITextView!
     
     let jailBreakApps = ["uncOver","Chimera","Chakra1n"]
+    let phoneType = "iPhone 11 Pro Max"
+    let iOSVersion = "iOS 14.3"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +32,15 @@ class JailBreakViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.register(nib, forCellReuseIdentifier: JailBreakTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let text = "Any of the following jailbreak tools can be used to jailbreak your " + phoneType + " Running in " + iOSVersion
+        self.jailBreakInstructionTextFeild.attributedText = text.withBoldText(textArray: [phoneType,iOSVersion],fontSize: 16.0)
+        self.jailBreakInstructionTextFeild.textAlignment = .left
+        self.jailBreakInstructionTextFeild.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jailBreakApps.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +48,9 @@ class JailBreakViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.selectionStyle = .none
         cell.actionInstall = {
             self.navigateToPaymentViewController()
+        }
+        if indexPath.row == 4 {
+            cell.separatorInset = .zero
         }
         
         return cell

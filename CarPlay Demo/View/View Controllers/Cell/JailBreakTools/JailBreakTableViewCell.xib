@@ -18,50 +18,50 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkra1n" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-By-KJh">
-                        <rect key="frame" x="5" y="10" width="88" height="67"/>
+                        <rect key="frame" x="5" y="10" width="81" height="61"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="88" id="Huk-v3-Dvd"/>
+                            <constraint firstAttribute="width" constant="81" id="Huk-v3-Dvd"/>
                         </constraints>
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkra1n" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlY-I3-j5n">
-                        <rect key="frame" x="98" y="8" width="152" height="21.5"/>
+                        <rect key="frame" x="101" y="8" width="138" height="21.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-bc-DZe">
-                        <rect key="frame" x="258" y="8" width="56" height="41"/>
-                        <color key="backgroundColor" red="0.77523241180000002" green="1" blue="0.57336098790000001" alpha="0.41877140410000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        <rect key="frame" x="247" y="8" width="67" height="45"/>
+                        <color key="backgroundColor" red="0.8319717646" green="0.9540228248" blue="0.88626784089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="56" id="qQl-Qh-bBb"/>
-                            <constraint firstAttribute="height" constant="41" id="vFo-gw-cxu"/>
+                            <constraint firstAttribute="width" constant="67" id="qQl-Qh-bBb"/>
+                            <constraint firstAttribute="height" constant="45" id="vFo-gw-cxu"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="Install">
-                            <color key="titleColor" systemColor="systemGreenColor"/>
+                            <color key="titleColor" red="0.36193525789999997" green="0.78856033089999999" blue="0.45484471319999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </state>
                         <connections>
                             <action selector="actionInstall:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NgC-nu-HsT"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoolStar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-BJ-wpX">
-                        <rect key="frame" x="98" y="34.5" width="152" height="17"/>
+                        <rect key="frame" x="101" y="34.5" width="138" height="17"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freemium App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYA-wX-OcJ">
-                        <rect key="frame" x="252.5" y="54" width="67" height="10"/>
+                        <rect key="frame" x="247" y="58" width="67" height="11"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="67" id="IZq-ra-l81"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="9"/>
+                        <color key="textColor" systemColor="systemGray2Color"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -76,9 +76,9 @@
                     <constraint firstItem="aYA-wX-OcJ" firstAttribute="top" secondItem="nnf-bc-DZe" secondAttribute="bottom" constant="5" id="frP-cm-JQk"/>
                     <constraint firstItem="aYA-wX-OcJ" firstAttribute="centerX" secondItem="nnf-bc-DZe" secondAttribute="centerX" id="loC-4J-knF"/>
                     <constraint firstItem="y4d-By-KJh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="orB-Gn-A3a"/>
-                    <constraint firstItem="fKP-BJ-wpX" firstAttribute="leading" secondItem="y4d-By-KJh" secondAttribute="trailing" constant="5" id="x3d-ex-voJ"/>
-                    <constraint firstAttribute="bottom" secondItem="y4d-By-KJh" secondAttribute="bottom" constant="8" id="yNf-e0-sM8"/>
-                    <constraint firstItem="BlY-I3-j5n" firstAttribute="leading" secondItem="y4d-By-KJh" secondAttribute="trailing" constant="5" id="ze8-dA-yV0"/>
+                    <constraint firstItem="fKP-BJ-wpX" firstAttribute="leading" secondItem="y4d-By-KJh" secondAttribute="trailing" constant="15" id="x3d-ex-voJ"/>
+                    <constraint firstAttribute="bottom" secondItem="y4d-By-KJh" secondAttribute="bottom" constant="14" id="yNf-e0-sM8"/>
+                    <constraint firstItem="BlY-I3-j5n" firstAttribute="leading" secondItem="y4d-By-KJh" secondAttribute="trailing" constant="15" id="ze8-dA-yV0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -94,8 +94,8 @@
     </objects>
     <resources>
         <image name="checkra1n" width="88" height="80"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

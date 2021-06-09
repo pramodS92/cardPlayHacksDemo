@@ -21,6 +21,7 @@ class PaymentsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.paymentOptionCOntinueButton.layer.cornerRadius = 3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

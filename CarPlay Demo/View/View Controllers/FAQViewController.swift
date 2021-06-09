@@ -43,6 +43,11 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       
+        if indexPath.row == 0 && selectedIndex == -1 {
+            return 180
+        }
+        
         if self.selectedIndex == indexPath.row && isCollapse == true {
             return 180
         }else {
@@ -55,6 +60,7 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
         if self.selectedIndex == indexPath.row {
             if self.isCollapse == false {
@@ -73,6 +79,11 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FAQTableViewCell.identifier, for: indexPath) as! FAQTableViewCell
+        
+        if indexPath.row == 0 && selectedIndex == -1 {
+            self.isCollapse = true
+        }
+        
         cell.selectionStyle = .none
         cell.titleFAQ.text = "Here is yout FAQ #" + String(indexPath.row + 1)
         cell.textFieldFAQ.text = questionFAQ[indexPath.row]

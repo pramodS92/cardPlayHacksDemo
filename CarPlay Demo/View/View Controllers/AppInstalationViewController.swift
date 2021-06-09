@@ -37,14 +37,32 @@ class AppInstalationViewController: UIViewController {
         if isJailbreak {
             self.buttonImageView.isHidden = true
             self.cardImageView.image = UIImage(named: "card_green")
-            self.cardViewTitleLabel.text = "Hurry, We found jailbreak Tools for"
+            
+            let text = "Hurray, We found jailbreak tools for".withBoldText(textArray: ["jailbreak tools"],fontSize: 27.0)
+            self.cardViewTitleLabel.attributedText = text
+           
+            let _instruction = "Go ahead and complete the next few steps to get your all favorite apps including " +  appName! + " on carplay"
+            self.instructionLabel.attributedText =  _instruction.withBoldText(textArray: [appName!],fontSize: 16.0)
+    
+              
             self.findJailBreakToolsButton.setTitle("Find Available Jailbreak Tools", for: .normal)
         }else{
             self.buttonImageView.isHidden = false
             self.cardImageView.image = UIImage(named: "card_red")
-            self.cardViewTitleLabel.text = "We could not find any jailbreak Tools for"
+            
+            let text = "We could not find any jailbreak tools for".withBoldText(textArray: ["jailbreak tools"],fontSize: 27.0)
+            self.cardViewTitleLabel.attributedText = text
+            
+            let _instruction = "This is not the end of story, you can use " +  appName! + " on Carplay UI using the app below "
+            self.instructionLabel.attributedText =  _instruction.withBoldText(textArray: [appName!],fontSize: 16.0)
+
             findJailBreakToolsButton.setTitle("Install incar for FREE", for: .normal)
         }
+        
+        self.cardViewTitleLabel.textAlignment = .center
+        self.instructionLabel.textAlignment = .left
+        self.cardViewTitleLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        self.instructionLabel.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
     
     
@@ -68,4 +86,35 @@ class AppInstalationViewController: UIViewController {
     
 
 }
+
+extension AppInstalationViewController {
+    
+    func makeTextBold(boldText: String, fontSize: CGFloat) -> NSMutableAttributedString{
+        let boldText = boldText
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: fontSize)]
+        let attributedString = NSMutableAttributedString(string:boldText, attributes:attrs)
+        
+        let normalString = NSMutableAttributedString(string:"")
+        
+        attributedString.append(normalString)
+        return attributedString
+    }
+}
+
+extension String {
+    func withBoldText(textArray: [String], font: UIFont? = nil,fontSize: CGFloat) -> NSAttributedString {
+        
+  let _font = font ?? UIFont.systemFont(ofSize: fontSize, weight: .light)
+  let fullString = NSMutableAttributedString(string: self, attributes: [NSAttributedString.Key.font: _font])
+  let boldFontAttribute: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: _font.pointSize)]
+        
+        for element in textArray {
+            let range = (self as NSString).range(of: element)
+            fullString.addAttributes(boldFontAttribute, range: range)
+        }
+         
+ 
+  return fullString
+}}
+
 

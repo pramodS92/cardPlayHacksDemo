@@ -57,9 +57,9 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
             selector: #selector(keyboardWillDisappear(notification:)),
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
-
+        
     }
-
+    
     
     
     func configData(){
@@ -97,12 +97,12 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         self.homeSearchTextInput.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
-   
+    
     
     @objc func keyboardWillAppear(notification: NSNotification) {
         self.view.frame.origin.y = -70
     }
-
+    
     @objc func keyboardWillDisappear(notification: NSNotification) {
         self.view.frame.origin.y = 0
     }
@@ -143,6 +143,9 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         cell.categoryItemAppIcon.image = self.sortTableData[indexPath.row].appImage
         cell.actionCellClick = {
             self.navigateToAppInstaller(appName:  self.sortTableData[indexPath.row].appName)
+        }
+        if indexPath.row == sortTableData.count - 1 {
+            cell.separatorInset = .zero
         }
         return cell
     }
@@ -205,6 +208,7 @@ extension HomeViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }
 
 

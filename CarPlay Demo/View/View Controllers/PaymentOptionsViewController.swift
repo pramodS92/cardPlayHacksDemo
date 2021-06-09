@@ -14,6 +14,7 @@ class PaymentOptionsViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var paymentOptionTextField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,11 @@ class PaymentOptionsViewController: UIViewController, UITableViewDelegate, UITab
         tableView.register(nib, forCellReuseIdentifier: PaymentsTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let text = "You are one step away from adding add any app to cardPlay.Let's get your lifetime membership only for 9.99$ and enjoy."
+        self.paymentOptionTextField.attributedText = text.withBoldText(textArray: [" add any app to cardPlay"],fontSize: 16.0)
+        self.paymentOptionTextField.textAlignment = .left
+        self.paymentOptionTextField.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
     
     @IBAction func actionBack(_ sender: Any) {

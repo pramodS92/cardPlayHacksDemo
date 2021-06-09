@@ -21,42 +21,41 @@
                         <rect key="frame" x="5" y="8" width="88" height="64"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayPal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y81-fg-oy6">
-                        <rect key="frame" x="101" y="8" width="56" height="22"/>
+                        <rect key="frame" x="108" y="8" width="56" height="22"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-km-QLf">
-                        <rect key="frame" x="261" y="22" width="53" height="37"/>
-                        <color key="backgroundColor" red="0.77523241180000002" green="1" blue="0.57336098790000001" alpha="0.41877140410000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        <rect key="frame" x="244" y="18" width="70" height="38"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.96078431372549022" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="53" id="wpy-Hf-BZh"/>
+                            <constraint firstAttribute="height" constant="38" id="VKd-Hl-cfb"/>
+                            <constraint firstAttribute="width" constant="70" id="wpy-Hf-BZh"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                        <state key="normal" title="Go ahead">
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Go Ahead">
                             <color key="titleColor" systemColor="systemGreenColor"/>
                         </state>
                         <connections>
                             <action selector="actionContinue:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="L1b-Go-kBC"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life time membership" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-LL-XrL">
-                        <rect key="frame" x="101" y="32" width="139.5" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifetime membership" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-LL-XrL">
+                        <rect key="frame" x="108" y="32" width="119" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Y81-fg-oy6" firstAttribute="leading" secondItem="jOK-2y-WV2" secondAttribute="trailing" constant="8" symbolic="YES" id="28L-sc-iPp"/>
-                    <constraint firstAttribute="bottom" secondItem="rhf-km-QLf" secondAttribute="bottom" constant="21" id="4fD-rj-lnR"/>
-                    <constraint firstItem="Zf3-LL-XrL" firstAttribute="leading" secondItem="jOK-2y-WV2" secondAttribute="trailing" constant="8" symbolic="YES" id="9Z6-CU-Mx1"/>
-                    <constraint firstAttribute="bottom" secondItem="Zf3-LL-XrL" secondAttribute="bottom" constant="31" id="DcV-KB-ZWi"/>
+                    <constraint firstItem="Y81-fg-oy6" firstAttribute="leading" secondItem="jOK-2y-WV2" secondAttribute="trailing" constant="15" id="28L-sc-iPp"/>
+                    <constraint firstItem="Zf3-LL-XrL" firstAttribute="leading" secondItem="jOK-2y-WV2" secondAttribute="trailing" constant="15" id="9Z6-CU-Mx1"/>
                     <constraint firstAttribute="bottom" secondItem="jOK-2y-WV2" secondAttribute="bottom" constant="8" id="OL7-CO-K0R"/>
                     <constraint firstItem="Zf3-LL-XrL" firstAttribute="top" secondItem="Y81-fg-oy6" secondAttribute="bottom" constant="2" id="QoV-pk-rsS"/>
                     <constraint firstItem="jOK-2y-WV2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VQf-ci-89I"/>
                     <constraint firstItem="jOK-2y-WV2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="d2O-St-amQ"/>
-                    <constraint firstItem="rhf-km-QLf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="ilH-QF-hgT"/>
+                    <constraint firstItem="rhf-km-QLf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="ilH-QF-hgT"/>
                     <constraint firstAttribute="trailing" secondItem="rhf-km-QLf" secondAttribute="trailing" constant="6" id="ksm-n2-2Co"/>
                     <constraint firstItem="Y81-fg-oy6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wST-ax-WIO"/>
                 </constraints>
