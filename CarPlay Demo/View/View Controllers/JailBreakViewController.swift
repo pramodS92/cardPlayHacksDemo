@@ -25,6 +25,9 @@ class JailBreakViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func actionBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AppInstalationViewController") as! AppInstalationViewController
+//        vc.modalPresentationStyle = .overFullScreen
+//        self.present(vc, animated: true, completion: nil)
     }
     
     func setUpUiProps() {

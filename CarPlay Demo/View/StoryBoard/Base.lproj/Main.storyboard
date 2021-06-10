@@ -858,6 +858,7 @@
                             <constraint firstItem="Hvu-4g-7WG" firstAttribute="leading" secondItem="3i6-j3-DzF" secondAttribute="leading" constant="20" id="spg-LK-hwc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jQY-qE-VHc"/>
                     <connections>
                         <outlet property="jailBreakInstructionTextFeild" destination="JhV-TQ-xpp" id="Seb-rE-YyY"/>
                         <outlet property="tableView" destination="Xac-4M-1nl" id="VM0-AM-wQL"/>
@@ -1077,7 +1078,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Gc-ET-s8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="804"/>
+            <point key="canvasLocation" x="2500" y="852"/>
         </scene>
         <!--User Guide View Controller-->
         <scene sceneID="Ukp-6g-f0t">
@@ -1113,6 +1114,7 @@
                                                 <connections>
                                                     <action selector="actionBack:" destination="71t-Xf-EJz" eventType="touchUpInside" id="Kdz-dp-Lbp"/>
                                                     <action selector="actionBack:" destination="jej-Fq-yNm" eventType="touchUpInside" id="Wxl-bz-Z34"/>
+                                                    <action selector="actionBack:" destination="4LI-ss-m6n" eventType="touchUpInside" id="bse-2I-Wya"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step by Step Guide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAb-nw-2af">
@@ -1191,13 +1193,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerText" destination="Kow-nI-2Zx" id="V0A-3l-yYb"/>
+                        <outlet property="headerTitleLabel" destination="OAb-nw-2af" id="wSC-X4-Cn1"/>
                         <outlet property="stepCounterLabel" destination="AzH-Vf-K7j" id="nZ3-Sb-yeT"/>
                         <outlet property="stepDescription" destination="oAB-gc-pGT" id="5sR-uy-PHa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="867-vM-XV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="804"/>
+            <point key="canvasLocation" x="3293" y="852"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MC1-Lj-83o">
@@ -1301,7 +1305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwN-xQ-3Wf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498.5507246376815" y="803.57142857142856"/>
+            <point key="canvasLocation" x="4077" y="853"/>
         </scene>
     </scenes>
     <resources>

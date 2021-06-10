@@ -14,6 +14,8 @@ class UserGuideViewController: UIViewController {
     private let scrollView = UIScrollView()
     @IBOutlet weak var stepCounterLabel: UILabel!
     @IBOutlet weak var stepDescription: UITextView!
+    @IBOutlet weak var bannerText: UILabel!
+    @IBOutlet weak var headerTitleLabel: UILabel!
     
     private let pageControl: UIPageControl = {
         let pageControl = UIPageControl()
@@ -33,6 +35,12 @@ class UserGuideViewController: UIViewController {
                   UIImage(named: "image6"),
                   UIImage(named: "image7"),
                   UIImage(named: "image8")]
+    
+    let socialMediaAppicons = [UIImage(named: "Facebook-r"),
+                               UIImage(named: "LinkedIn"),
+                               UIImage(named: "Pinterest"),
+                               UIImage(named: "Reddit"),
+                               UIImage(named: "Twitter")]
     
     
     let userGuideDescriptions = ["Copy the following repository","Open Sileo/Cydia and  then click on the Sources Tab.",
@@ -86,6 +94,7 @@ class UserGuideViewController: UIViewController {
             
             
             if x < 8 {
+               
                 let image = images[x]
                 let imageView = UIImageView(image: image)
                 imageView.frame = CGRect(x: 0, y: 40, width:  view.frame.size.width, height:  view.frame.size.height - 250)
@@ -127,12 +136,34 @@ class UserGuideViewController: UIViewController {
         descriptionTextField.textAlignment = .left
         descriptionTextField.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
+        
+        let stackView = UIStackView()
+        stackView.frame = CGRect(x: 30, y: 140, width: 350, height: 70)
+        stackView.axis  = NSLayoutConstraint.Axis.horizontal
+        stackView.distribution  = UIStackView.Distribution.equalSpacing
+        stackView.alignment = UIStackView.Alignment.center
+        
+        for image in socialMediaAppicons {
+            let imageView = UIImageView(image: image)
+            imageView.frame = CGRect(x: 20,
+                                     y:70 ,
+                                     width: 60,
+                                     height: 60)
+            imageView.contentMode = .scaleAspectFill
+            imageView.backgroundColor = .clear
+            stackView.addArrangedSubview(imageView)
+           
+        }
+        stackView.translatesAutoresizingMaskIntoConstraints = true
+       
+        
         let shareAppLabel = UILabel(frame: CGRect(x: 20, y: 250, width: view.frame.size.width/2, height: 22))
         shareAppLabel.text = "I do not want to share?"
         shareAppLabel.textAlignment = .left
+        shareAppLabel.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         shareAppLabel.font = titleLabel.font.withSize(15)
         
-        let backToAppListLabel =  UILabel(frame: CGRect(x: view.frame.size.width/2, y: 250, width: view.frame.size.width/2, height: 22))
+        let backToAppListLabel =  UILabel(frame: CGRect(x: view.frame.size.width/2 - 10, y: 250, width: view.frame.size.width/2, height: 22))
         backToAppListLabel.text = "Back to App List"
         backToAppListLabel.textAlignment = .left
         backToAppListLabel.textColor = #colorLiteral(red: 0, green: 0.8005561829, blue: 0.4150190353, alpha: 1)
@@ -145,12 +176,17 @@ class UserGuideViewController: UIViewController {
         
         page.addSubview(titleLabel)
         page.addSubview(descriptionTextField)
+        page.addSubview(stackView)
         page.addSubview(shareAppLabel)
         page.addSubview(backToAppListLabel)
-        
         page.backgroundColor = .white
         return page
     }
+    
+    @IBAction func actionBack(_ sender: Any) {
+        scrollView.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
     
     
 }
@@ -160,7 +196,11 @@ extension UserGuideViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageNumber = Int(floorf( Float(scrollView.contentOffset.x) / Float(scrollView.frame.size.width)))
         pageControl.currentPage = pageNumber
+        self.bannerText.text =  pageNumber<8 ? "Steps" : "Social"
+        self.headerTitleLabel.text = pageNumber<8 ? "Step by Step Guide" : "Installation Completed"
+            
         if pageNumber >= 0 && pageNumber < 8{
+            pageControl.isHidden = false
             self.stepDescription.isHidden = false
             self.stepCounterLabel.isHidden = false
             self.stepCounterLabel.text =  "Step " + String(pageNumber + 1)
@@ -168,6 +208,7 @@ extension UserGuideViewController: UIScrollViewDelegate {
         }else{
             self.stepCounterLabel.isHidden = true
             self.stepDescription.isHidden = true
+            pageControl.isHidden = true
         }
         
     }
