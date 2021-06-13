@@ -49,6 +49,8 @@ class PaymentOptionsViewController: UIViewController, UITableViewDelegate, UITab
         cell.actionContinue = {
             self.showSuccessAlert()
         }
+        let totalRows = tableView.numberOfRows(inSection: indexPath.section)
+        cell.paymentsSeparatorView.isHidden = indexPath.row == totalRows - 1 ? true: false
         return cell
     }
     

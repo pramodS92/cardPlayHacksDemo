@@ -144,9 +144,9 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         cell.actionCellClick = {
             self.navigateToAppInstaller(appName:  self.sortTableData[indexPath.row].appName)
         }
-        if indexPath.row == sortTableData.count - 1 {
-            cell.separatorInset = .zero
-        }
+        
+        let totalRows = tableView.numberOfRows(inSection: indexPath.section)
+        cell.homeCellSeparator.isHidden = indexPath.row == totalRows - 1 ? true: false
         return cell
     }
     

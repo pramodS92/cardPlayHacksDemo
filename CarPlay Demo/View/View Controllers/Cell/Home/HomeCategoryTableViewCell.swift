@@ -18,8 +18,10 @@ class HomeCategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryItemAppName: UILabel!
     @IBOutlet weak var categoryItemAppDetail: UITextView!
     @IBOutlet weak var cetegoryAddButton: UIButton!
+    @IBOutlet weak var homeCellSeparator: UIView!
     var index: Int = 0
     
+  
     var actionCellClick: (()->Void)? = nil
     
 

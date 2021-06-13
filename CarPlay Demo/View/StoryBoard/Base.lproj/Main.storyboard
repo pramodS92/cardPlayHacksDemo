@@ -400,7 +400,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Oqe-ko-65u" secondAttribute="trailing" id="fFE-qO-l0y"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PX-3B-56i">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PX-3B-56i">
                                 <rect key="frame" x="16" y="474" width="382" height="368"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -440,6 +440,7 @@
                             <constraint firstItem="Qh9-SM-GQy" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="30" id="9Uc-Bg-4FK"/>
                             <constraint firstItem="0PX-3B-56i" firstAttribute="top" secondItem="cBY-ce-8GS" secondAttribute="bottom" constant="8" symbolic="YES" id="CGl-qw-BaG"/>
                             <constraint firstItem="DHa-08-tCb" firstAttribute="top" secondItem="xKQ-Uv-tvd" secondAttribute="bottom" constant="8" id="Hjs-1B-pdv"/>
+                            <constraint firstItem="Qh9-SM-GQy" firstAttribute="centerX" secondItem="JlE-vU-267" secondAttribute="centerX" id="JPo-Na-3MW"/>
                             <constraint firstItem="VRe-M1-hKI" firstAttribute="trailing" secondItem="Zc1-hN-4s7" secondAttribute="trailing" constant="17" id="NGo-KV-k8A"/>
                             <constraint firstItem="0PX-3B-56i" firstAttribute="leading" secondItem="VRe-M1-hKI" secondAttribute="leading" constant="16" id="QB7-0h-ABC"/>
                             <constraint firstItem="Zc1-hN-4s7" firstAttribute="centerX" secondItem="JlE-vU-267" secondAttribute="centerX" id="UhQ-0O-L2e"/>
@@ -835,7 +836,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-4M-1nl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xac-4M-1nl">
                                 <rect key="frame" x="10" y="314" width="394" height="528"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -963,7 +964,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuG-WV-XH6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuG-WV-XH6">
                                 <rect key="frame" x="20" y="314" width="374" height="528"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>

@@ -16,14 +16,14 @@ class FAQTableViewCell: UITableViewCell {
     @IBOutlet weak var titleFAQ: UILabel!
     @IBOutlet weak var textFieldFAQ: UITextView!
     @IBOutlet weak var titleViewHolder: UIView!
+    @IBOutlet weak var iconImageView: UIImageView!
     
     var isExpand: Bool = false
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let gesture = UITapGestureRecognizer(target: self, action:  #selector(checkAction))
-        self.viewIcon.addGestureRecognizer(gesture)
+        
     }
     
     
@@ -43,15 +43,5 @@ class FAQTableViewCell: UITableViewCell {
     
 }
 
-extension UIView{
-    func rotate() {
-        let rotation : CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
-        rotation.toValue = NSNumber(value: Double.pi/2)
-        rotation.duration = 1
-        rotation.isCumulative = true
-        rotation.repeatCount = Float.greatestFiniteMagnitude
-        self.layer.add(rotation, forKey: "rotationAnimation")
-    }
-}
 
 

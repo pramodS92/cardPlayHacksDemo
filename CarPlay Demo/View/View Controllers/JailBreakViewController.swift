@@ -52,9 +52,8 @@ class JailBreakViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.actionInstall = {
             self.navigateToPaymentViewController()
         }
-        if indexPath.row == 4 {
-            cell.separatorInset = .zero
-        }
+        let totalRows = tableView.numberOfRows(inSection: indexPath.section)
+        cell.jailBreakSeparator.isHidden = indexPath.row == totalRows - 1 ? true: false
         
         return cell
     }

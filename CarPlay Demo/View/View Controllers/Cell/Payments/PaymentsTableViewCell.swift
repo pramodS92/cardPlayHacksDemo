@@ -15,6 +15,7 @@ class PaymentsTableViewCell: UITableViewCell {
     @IBOutlet weak var paymentOptionIcon: UIImageView!
     @IBOutlet weak var paymentOptionName: UILabel!
     @IBOutlet weak var paymentOptionCOntinueButton: UIButton!
+    @IBOutlet weak var paymentsSeparatorView: UIView!
     
     var actionContinue: (()->Void)? = nil
     

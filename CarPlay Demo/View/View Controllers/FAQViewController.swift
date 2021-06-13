@@ -22,6 +22,8 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     var selectedIndex = -1
     var isCollapse = false
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUiProps()
@@ -43,7 +45,7 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       
+        
         if indexPath.row == 0 && selectedIndex == -1 {
             return 180
         }
@@ -51,7 +53,7 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
         if self.selectedIndex == indexPath.row && isCollapse == true {
             return 180
         }else {
-            return 55
+            return 60
         }
     }
     
@@ -59,18 +61,30 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
         return questionFAQ.count
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-        if self.selectedIndex == indexPath.row {
-            if self.isCollapse == false {
-                self.isCollapse = true
-            }else {
+        
+        if  selectedIndex == -1 {
+            if  indexPath.row == 0 {
                 self.isCollapse = false
+            }else {
+                self.isCollapse = true
             }
-        }else {
-            self.isCollapse = true
+            
+        }else{
+            if self.selectedIndex == indexPath.row {
+                if self.isCollapse == false {
+                    self.isCollapse = true
+                }else {
+                    self.isCollapse = false
+                }
+            }else {
+                self.isCollapse = true
+            }
         }
+        
         
         self.selectedIndex = indexPath.row
         tableView.reloadRows(at: [indexPath], with: .automatic)
@@ -79,15 +93,47 @@ class FAQViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FAQTableViewCell.identifier, for: indexPath) as! FAQTableViewCell
-        
-        if indexPath.row == 0 && selectedIndex == -1 {
-            self.isCollapse = true
-        }
-        
         cell.selectionStyle = .none
         cell.titleFAQ.text = "Here is yout FAQ #" + String(indexPath.row + 1)
         cell.textFieldFAQ.text = questionFAQ[indexPath.row]
+        
+        if isCollapse {
+            if selectedIndex == indexPath.row   {
+                rotate(view: cell.iconImageView,clockWise: true)
+            }
+        }else{
+            if selectedIndex == -1 {
+                if indexPath.row == 0 {
+                    rotate(view: cell.iconImageView,clockWise: true)
+                }else {
+                    rotate(view: cell.iconImageView,clockWise: false)
+                }
+            }else {
+                if selectedIndex == indexPath.row   {
+                    rotate(view: cell.iconImageView,clockWise: false)
+                }
+            }
+        }
+        
+        
         return cell
+    }
+    
+}
+
+extension FAQViewController {
+    
+    func rotate(view: UIImageView, clockWise: Bool) {
+        UIView.animate(withDuration: 0.4,
+                       animations: {
+                        view.transform = CGAffineTransform(rotationAngle: clockWise ? .pi/2 : 0.0)
+                       },
+                       completion: { _ in
+                        UIView.animate(withDuration: 0.1) {
+                            
+                        }
+                       })
+        
     }
     
 }

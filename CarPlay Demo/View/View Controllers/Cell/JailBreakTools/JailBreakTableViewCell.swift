@@ -16,6 +16,7 @@ class JailBreakTableViewCell: UITableViewCell {
     @IBOutlet weak var jailBreakAppName: UILabel!
     @IBOutlet weak var jailBreakAppDescription: UILabel!
     @IBOutlet weak var jailBreakAppInstallButton: UIButton!
+    @IBOutlet weak var jailBreakSeparator: UIView!
     
     var actionInstall: (()->Void)? = nil
 

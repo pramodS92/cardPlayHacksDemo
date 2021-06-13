@@ -21,7 +21,7 @@
                         <rect key="frame" x="4" y="4" width="312" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is your FAQ #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMl-8B-JK2">
-                                <rect key="frame" x="8" y="15" width="149.5" height="21"/>
+                                <rect key="frame" x="8" y="15" width="246" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,6 +47,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstItem="iPU-Db-7rA" firstAttribute="leading" secondItem="dMl-8B-JK2" secondAttribute="trailing" constant="8" symbolic="YES" id="HIq-al-EZX"/>
                             <constraint firstAttribute="bottom" secondItem="iPU-Db-7rA" secondAttribute="bottom" constant="4" id="LIV-Ti-S8L"/>
                             <constraint firstAttribute="trailing" secondItem="iPU-Db-7rA" secondAttribute="trailing" constant="8" id="hEY-fW-uXV"/>
                             <constraint firstAttribute="bottom" secondItem="dMl-8B-JK2" secondAttribute="bottom" constant="14" id="kON-Dx-3ES"/>
@@ -62,11 +63,8 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" text="pppp" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-n2-nc8">
                                 <rect key="frame" x="4" y="4" width="304" height="113"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="cGV-CR-cxS"/>
-                                </constraints>
                                 <color key="textColor" red="0.50842718909999995" green="0.50842718909999995" blue="0.50842718909999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -93,6 +91,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="iconImageView" destination="uMK-Va-10A" id="IK1-el-mQh"/>
                 <outlet property="textFieldFAQ" destination="t5a-n2-nc8" id="UZy-ii-BPw"/>
                 <outlet property="titleFAQ" destination="dMl-8B-JK2" id="ubW-xv-SMc"/>
                 <outlet property="titleViewHolder" destination="7qI-bA-Leb" id="JAS-7B-XeF"/>
